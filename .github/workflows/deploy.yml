@@ -30,4 +30,4 @@ jobs:
           # Email that you use with heroku
           heroku_email: seeeeeeong@naver.com
           # The appname to use for deploying/updating
-          heroku_app_name: lee-sns
+          heroku_app_name: seong-sns
