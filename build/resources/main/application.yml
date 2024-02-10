@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    database: postgresql
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: update
+      properties:
+        hibernate.format_sql: true
+        show_sql: true
+
+datasource:
+  hikari:
+    maximum-pool-size: 4
+  url: jdbc:postgresql://ec2-3-221-175-22.compute-1.amazonaws.com/dsj4dj5jnksjh
+  username: dbmqozwznpxhlo
+  password: 853c81b3088d52eee92b7b45019f24925d8967d3b6797829be78fb759d77ca77
+  platform: postgres
+  driver-class-name: org.postgresql.Driver
+
+jwt:
+  secret-key: fast-campus.simple_sns_2022_secret_key
+  # 30 days
+  token.expired-time-ms: 2592000000
